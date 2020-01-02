@@ -1,6 +1,6 @@
 FROM docker.io/centos:7
 LABEL maintainer="Wolfgang Kulhanek <WolfgangKulhanek@gmail.com>"
-ARG GRAFANA_VERSION=5.4.4
+ARG GRAFANA_VERSION=6.2.5
 
 LABEL name="Grafana" \
       io.k8s.display-name="Grafana" \
