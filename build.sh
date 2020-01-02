@@ -1,6 +1,7 @@
 #!/bin/bash
-export VERSION=5.4.4
-docker build . -t wkulhanek/grafana:latest
-docker tag wkulhanek/grafana:latest wkulhanek/grafana:${VERSION}
-docker push wkulhanek/grafana:${VERSION}
-docker push wkulhanek/grafana:latest
+export VERSION=6.5.2
+export MAINTAINER=gschmidt
+docker build . -t ${MAINTAINER}/grafana:latest
+docker tag ${MAINTAINER}/grafana:latest ${MAINTAINER}/grafana:${VERSION}
+docker push ${MAINTAINER}/grafana:${VERSION}
+docker push ${MAINTAINER}/grafana:latest
